@@ -32,8 +32,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ProductScrollingActivity : AppCompatActivity(), SensorEventListener, LocationListener {
     var loggedInUser: User? = null
-    private lateinit var sensorManager: SensorManager
-    private var mAccel : Sensor? = null
+    // private lateinit var sensorManager: SensorManager
+    // private var mAccel : Sensor? = null
     private var lastEvent : String? = null
 
 
