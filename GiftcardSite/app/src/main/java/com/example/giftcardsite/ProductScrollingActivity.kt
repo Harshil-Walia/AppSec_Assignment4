@@ -30,7 +30,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class ProductScrollingActivity : AppCompatActivity(), SensorEventListener, LocationListener {
+class ProductScrollingActivity : AppCompatActivity() {
     var loggedInUser: User? = null
     // private lateinit var sensorManager: SensorManager
     // private var mAccel : Sensor? = null
@@ -96,7 +96,7 @@ class ProductScrollingActivity : AppCompatActivity(), SensorEventListener, Locat
         return true
     }
 
-    override fun onLocationChanged(location: Location) {
+    /*override fun onLocationChanged(location: Location) {
         var userInfoContainer = UserInfoContainer(location, null, loggedInUser?.token)
         var builder: Retrofit.Builder = Retrofit.Builder().baseUrl("https://appsec.moyix.net").addConverterFactory(
             GsonConverterFactory.create())
@@ -166,6 +166,6 @@ class ProductScrollingActivity : AppCompatActivity(), SensorEventListener, Locat
     override fun onPause() {
         super.onPause()
         // sensorManager.unregisterListener(this)
-    }
+    }*/
 
 }
