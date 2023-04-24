@@ -67,7 +67,7 @@ class SecondFragment : Fragment() {
                         Log.d("Register Success", "Register success. Boo.")
                         Log.d("Register Success", "Token:" + loggedInUser?.token.toString())
                         var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://appsec.moyix.net/api/index"))
-                        
+
 
                         intent.putExtra("User", loggedInUser);
                         startActivity(intent)
